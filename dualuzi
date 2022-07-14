@@ -1,0 +1,17 @@
+local RevolverSettings = require(game:GetService("Players").LocalPlayer.Backpack["Dual Uzi"].Setting)
+ RevolverSettings.AmmoPerMag = 69696969
+game:GetService("Players").LocalPlayer.Backpack["Dual Uzi"]["GunScript_Server"].Mag.Value = 69696969
+ 
+local toolname =  "Dual Uzi"
+game.Players.LocalPlayer.Backpack:FindFirstChild(toolname).Parent = game.Players.LocalPlayer.Character
+wait(.4)
+
+    local N=game:GetService("VirtualInputManager")
+    N:SendKeyEvent(true,"R",false,game)
+
+        wait(3.1)
+game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid':UnequipTools()
+
+ local RevolverSettings = require(game:GetService("Players").LocalPlayer.Backpack["Dual Uzi"].Setting)
+ RevolverSettings.AmmoPerMag = 30
+game:GetService("Players").LocalPlayer.Backpack["Dual Uzi"]["GunScript_Server"].Mag.Value = 30
