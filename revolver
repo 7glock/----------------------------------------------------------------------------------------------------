@@ -1,0 +1,17 @@
+local CumSettings = require(game:GetService("Players").LocalPlayer.Backpack["Revolver"].Setting)
+ CumSettings.AmmoPerMag = 69696969
+game:GetService("Players").LocalPlayer.Backpack["Revolver"]["GunScript_Server"].Mag.Value = 69696969
+ 
+local toolname =  "Revolver"
+game.Players.LocalPlayer.Backpack:FindFirstChild(toolname).Parent = game.Players.LocalPlayer.Character
+wait(.3)
+
+    local N=game:GetService("VirtualInputManager")
+    N:SendKeyEvent(true,"R",false,game)
+
+        wait(2.1)
+game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid':UnequipTools()
+
+ local CumSettings = require(game:GetService("Players").LocalPlayer.Backpack["Revolver"].Setting)
+ CumSettings.AmmoPerMag = 6
+game:GetService("Players").LocalPlayer.Backpack["Revolver"]["GunScript_Server"].Mag.Value = 6
